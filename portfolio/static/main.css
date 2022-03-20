@@ -1,0 +1,14 @@
+body{
+    background: #96A6D9 !important;
+}
+a{
+    color:#fff !important;
+}
+.card-project:hover{
+    border:5px solid #fff;
+    cursor:pointer;
+}
+
+.bg-darks{
+    color:#011C40;
+}

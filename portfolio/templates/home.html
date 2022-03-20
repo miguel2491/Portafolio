@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% load static %}
+<header>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{% static 'perfil.jpg' %}" class="img-fluid img-thumbnail rounded" width="300" />
+        </div>
+        <div class="col-md-9 my-auto">
+            <h1>I am <strong>Miguel Ángel Domínguez Serrano</strong> Web Developer</h1>
+            <p>
+                Soy programador web con experiencia desde 2015, honesto y me gusta esforzarme,
+                me gusta seguir aprendiendo y aportar mi experiencia, en inovar y proponer.
+                Me gusta la parte del FrontEnd aunque tambien trabajo BackEnd.
+            </p>
+            <p>
+                <label>30 Years Old</label><br/>
+                <label><i class="fa fa-phone"></i> 221 436 8482</label>
+            </p>
+            <p>
+                <label><i class="fa fa-location"></i> Puebla, Puebla</label>
+            </p>
+            <p>
+                <label><i class="fa fa-envelope-circle-check"></i> miguel.angel.dominguez.serrano@gmail.com</label>
+            </p>
+            <a class="btn btn-primary btn-lg rounded-0" href="{% static 'CV.pdf' %}" target="_blank">Download CV</a>
+        </div>
+    </div>
+</header>    
+{% endblock %}

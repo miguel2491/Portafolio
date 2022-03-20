@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% load static %}
+<div class="text-center">
+    <h2>CMS</h2>
+    {% for cm in cms %}
+    <div class="p-3">
+        <div class="card card-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="col-12">
+                        <img src="{% static './' %}{{cm.imagen}}" class="img-fluid img-thumbnail rounded" width="200" />
+                    </div>
+                    <h2>{{cm.title}}</h2>
+                    <label>{{cm.description}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
